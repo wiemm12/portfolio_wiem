@@ -96,18 +96,62 @@ body {
     padding: 1rem 20px;
 }
 
+/* Logo with Photo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.logo-photo {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 15px rgba(90, 155, 216, 0.3);
+    transition: all 0.3s ease;
+}
+
+.logo-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.logo-photo-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--card-bg), var(--card-hover-bg));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
+
+.logo-photo-placeholder i {
+    font-size: 30px;
+}
+
+.logo:hover .logo-photo {
+    transform: scale(1.1);
+    border-color: var(--electric-accent);
+    box-shadow: 0 0 20px rgba(27, 163, 247, 0.5);
+}
+
 .logo h2 {
     color: var(--primary-color);
     font-size: 32px;
     font-weight: 700;
     letter-spacing: 0.5px;
     transition: all 0.3s ease;
-    cursor: pointer;
+    margin: 0;
 }
 
-.logo h2:hover {
-    transform: scale(1.05);
-    letter-spacing: 1px;
+.logo:hover h2 {
     color: var(--electric-accent);
     text-shadow: var(--electric-glow-soft);
 }
@@ -234,103 +278,120 @@ body {
     margin: 0.3rem 0;
 }
 
-/* Line 1: "Hello" */
+/* Line 1: "Welcome to my portfolio" */
 .line-1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 400;
     animation: fadeInStay 9s ease-in-out infinite;
     animation-delay: 0s;
 }
 
-/* Line 2: "I'm Chebbi Wiem" */
+/* Line 2: "Hi! I'm Wiem Chebbi Embedded Systems Engineer" - Sequential animation */
 .line-2 {
     font-size: 50px;
     font-weight: 700;
-    color: var(--primary-color);
     animation: fadeInStay 9s ease-in-out infinite;
     animation-delay: 1s;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3em;
+    justify-content: center;
+}
+
+.sequential-text {
+    display: inline-block;
+    opacity: 0;
+    animation: sequentialFadeIn 0.5s ease-in-out forwards;
+}
+
+.line-2 .sequential-text:nth-child(1) {
+    animation-delay: 1.0s;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.line-2 .sequential-text:nth-child(2) {
+    animation-delay: 1.5s;
+    font-weight: 700;
+    color: var(--primary-color);
     transition: all 0.3s ease;
 }
 
-.line-2:hover {
+.line-2 .sequential-text:nth-child(2):hover {
     color: var(--electric-accent);
     text-shadow: var(--electric-glow-soft);
 }
 
-/* Line 3: "Embedded Systems Engineer" */
+.line-2 .sequential-text:nth-child(3) {
+    animation-delay: 2.0s;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+/* Line 3: "AI Passionate" */
 .line-3 {
     font-size: 30px;
     font-weight: 500;
     animation: fadeInStay 9s ease-in-out infinite;
-    animation-delay: 2s;
+    animation-delay: 2.5s;
 }
 
-/* Line 4: "AI Passionate" */
+/* Line 4: "MCU Programmer" */
 .line-4 {
-    font-size: 28px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 500;
     animation: fadeInStay 9s ease-in-out infinite;
     animation-delay: 3s;
 }
 
-/* Line 5: "MCU Programmer" */
+/* Line 5: "Creative Dreamer." - Word by word animation */
 .line-5 {
-    font-size: 28px;
-    font-weight: 400;
-    animation: fadeInStay 9s ease-in-out infinite;
-    animation-delay: 4s;
-}
-
-/* Line 6: "Creative Dreamer" with typing effect */
-.line-6 {
     font-size: 32px;
     font-weight: 600;
     max-width: 800px;
     line-height: 1.5;
     animation: fadeInStay 9s ease-in-out infinite;
-    animation-delay: 5s;
-    letter-spacing: 1.5px;
+    animation-delay: 3.5s;
     color: var(--primary-color);
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
 }
 
-/* Typing letter animation */
-.typing-letter {
+.word-animation {
     display: inline-block;
     opacity: 0;
-    animation: typingFadeIn 0.3s ease-in-out forwards;
-    letter-spacing: normal;
+    animation: wordFadeIn 0.6s ease-in-out forwards;
 }
 
-/* Add extra spacing for space characters to create proper word separation */
-.line-6 .typing-letter:nth-child(9) {
-    margin-right: 0.3em;
+.word-1 {
+    animation-delay: 3.5s;
 }
 
-/* Stagger the animation for each letter */
-.line-6 .typing-letter:nth-child(1) { animation-delay: 5.0s; }
-.line-6 .typing-letter:nth-child(2) { animation-delay: 5.1s; }
-.line-6 .typing-letter:nth-child(3) { animation-delay: 5.2s; }
-.line-6 .typing-letter:nth-child(4) { animation-delay: 5.3s; }
-.line-6 .typing-letter:nth-child(5) { animation-delay: 5.4s; }
-.line-6 .typing-letter:nth-child(6) { animation-delay: 5.5s; }
-.line-6 .typing-letter:nth-child(7) { animation-delay: 5.6s; }
-.line-6 .typing-letter:nth-child(8) { animation-delay: 5.7s; }
-.line-6 .typing-letter:nth-child(9) { animation-delay: 5.8s; }
-.line-6 .typing-letter:nth-child(10) { animation-delay: 5.9s; }
-.line-6 .typing-letter:nth-child(11) { animation-delay: 6.0s; }
-.line-6 .typing-letter:nth-child(12) { animation-delay: 6.1s; }
-.line-6 .typing-letter:nth-child(13) { animation-delay: 6.2s; }
-.line-6 .typing-letter:nth-child(14) { animation-delay: 6.3s; }
-.line-6 .typing-letter:nth-child(15) { animation-delay: 6.4s; }
+.word-2 {
+    animation-delay: 4.2s;
+}
 
-@keyframes typingFadeIn {
+/* Animation Keyframes */
+@keyframes sequentialFadeIn {
     0% {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes wordFadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
     }
 }
 
@@ -1878,28 +1939,25 @@ body {
 
     /* Home Section Responsive */
     .line-1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .line-2 {
         font-size: 38px;
+        gap: 0.2em;
     }
 
     .line-3 {
         font-size: 24px;
     }
 
-    .line-4, .line-5 {
-        font-size: 22px;
+    .line-4 {
+        font-size: 24px;
     }
 
-    .line-6 {
+    .line-5 {
         font-size: 26px;
-    }
-
-    .line-7 {
-        font-size: 20px;
-        padding: 0 1rem;
+        gap: 0.4em;
     }
 
     /* About Section Responsive */
@@ -2037,6 +2095,20 @@ body {
         height: 50px;
     }
 
+    .logo {
+        gap: 0.8rem;
+    }
+
+    .logo-photo {
+        width: 40px;
+        height: 40px;
+        border-width: 2px;
+    }
+
+    .logo-photo-placeholder i {
+        font-size: 25px;
+    }
+
     .logo h2 {
         font-size: 28px;
     }
@@ -2046,6 +2118,20 @@ body {
     .profile-photo {
         width: 200px;
         height: 200px;
+    }
+
+    .logo {
+        gap: 0.6rem;
+    }
+
+    .logo-photo {
+        width: 35px;
+        height: 35px;
+        border-width: 2px;
+    }
+
+    .logo-photo-placeholder i {
+        font-size: 22px;
     }
 
     .logo h2 {
@@ -2079,28 +2165,26 @@ body {
 
     /* Home Section Mobile */
     .line-1 {
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .line-2 {
         font-size: 30px;
+        flex-direction: column;
+        gap: 0.1em;
     }
 
     .line-3 {
         font-size: 20px;
     }
 
-    .line-4, .line-5 {
-        font-size: 18px;
+    .line-4 {
+        font-size: 20px;
     }
 
-    .line-6 {
+    .line-5 {
         font-size: 22px;
-    }
-
-    .line-7 {
-        font-size: 16px;
-        padding: 0 1.5rem;
+        gap: 0.3em;
     }
 
     /* About Section Mobile */
@@ -2362,10 +2446,19 @@ body {
 
     .line-2 {
         font-size: 26px;
+        flex-direction: column;
     }
 
     .line-3 {
         font-size: 18px;
+    }
+
+    .line-4 {
+        font-size: 18px;
+    }
+
+    .line-5 {
+        font-size: 20px;
     }
 
     .section-title {
@@ -2403,19 +2496,24 @@ body {
     }
 
     .line-1 {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .line-2 {
         font-size: 24px;
+        flex-direction: column;
     }
 
     .line-3 {
         font-size: 16px;
     }
 
-    .line-4, .line-5, .line-6 {
+    .line-4 {
         font-size: 16px;
+    }
+
+    .line-5 {
+        font-size: 18px;
     }
 }
 
