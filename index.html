@@ -1,0 +1,719 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio Website">
+    <title>My Portfolio - Wiem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h2>Chebbi Wiem</h2>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#organizations" class="nav-link">Organizations</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-content-centered">
+                <div class="stacking-animation">
+                    <div class="line line-1">Hello</div>
+                    <div class="line line-2">I'm Chebbi Wiem</div>
+                    <div class="line line-3">Embedded Systems Engineer</div>
+                    <div class="line line-4">AI Passionate</div>
+                    <div class="line line-5">MCU Programmer</div>
+                    <div class="line line-6">
+                        <span class="typing-letter">C</span><span class="typing-letter">r</span><span class="typing-letter">e</span><span class="typing-letter">a</span><span class="typing-letter">t</span><span class="typing-letter">i</span><span class="typing-letter">v</span><span class="typing-letter">e</span><span class="typing-letter"> </span><span class="typing-letter">D</span><span class="typing-letter">r</span><span class="typing-letter">e</span><span class="typing-letter">a</span><span class="typing-letter">m</span><span class="typing-letter">e</span><span class="typing-letter">r</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-photo-container">
+                    <div class="about-photo">
+                        <img src="images/wiem.jpg" alt="Chebbi Wiem" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="photo-placeholder" style="display: none;">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p class="about-description">Final-year Embedded Systems Engineering student passionate about AI, automotive applications, and innovative embedded projects.</p>
+                    <p class="about-description">Seeking a six-month final-year internship starting in February 2026.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>chebbi.wiemm@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tunis, Tunisia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience resume-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+
+                <!-- Experience 1: Sipraw Startup -->
+                <div class="experience-card-new">
+                    <div class="exp-header">
+                        <h3 class="exp-title">
+                            <span class="exp-company">Sipraw Startup</span>
+                            <span class="exp-separator">|</span>
+                            <span class="exp-role">Embedded Systems Engineer Intern</span>
+                        </h3>
+                    </div>
+                    <div class="exp-meta">
+                        <div class="exp-meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ariana, Tunisia</span>
+                        </div>
+                        <div class="exp-meta-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>June 2025 – August 2025</span>
+                        </div>
+                    </div>
+                    <div class="exp-description">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Designed and integrated an environmental monitoring system for a Spirulina machine using the STM32H7B3i-DK board and sensors (pH, turbidity, temperature, O₂/CO₂), controlling stepper motors via ADC, PWM, 1-Wire, UART, and timers.</li>
+                            <li><i class="fas fa-arrow-right"></i> Implemented reliable UART communication between STM32 and ESP32, enabling MQTT-based real-time data transmission.</li>
+                            <li><i class="fas fa-arrow-right"></i> Collaborated in a startup environment, participating in Agile/SCRUM sprints to contribute to software integration and project development.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-skills">
+                        <h4 class="exp-skills-title">Skills & Technologies:</h4>
+                        <div class="exp-skills-list">
+                            <span class="exp-skill-badge">C language</span>
+                            <span class="exp-skill-badge">STM32CubeIDE</span>
+                            <span class="exp-skill-badge">ADC</span>
+                            <span class="exp-skill-badge">PWM</span>
+                            <span class="exp-skill-badge">1-Wire</span>
+                            <span class="exp-skill-badge">UART</span>
+                            <span class="exp-skill-badge">Timers</span>
+                            <span class="exp-skill-badge">MQTT</span>
+                            <span class="exp-skill-badge">MQTTX</span>
+                            <span class="exp-skill-badge">Agile/SCRUM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2: ACTIA Engineering Services -->
+                <div class="experience-card-new">
+                    <div class="exp-header">
+                        <h3 class="exp-title">
+                            <span class="exp-company">ACTIA Engineering Services</span>
+                            <span class="exp-separator">|</span>
+                            <span class="exp-role">AI & Embedded Systems Engineer Intern</span>
+                        </h3>
+                    </div>
+                    <div class="exp-meta">
+                        <div class="exp-meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Ariana, Tunisia</span>
+                        </div>
+                        <div class="exp-meta-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>July 2024 – August 2024</span>
+                        </div>
+                    </div>
+                    <div class="exp-description">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Created an AI-based object detection system for the Adavia autonomous bus and implemented CAN communication with the Curtis controller via PCAN.</li>
+                            <li><i class="fas fa-arrow-right"></i> Created and annotated a custom dataset using Roboflow and trained the model with YOLOv8 on NVIDIA Jetson Nano.</li>
+                            <li><i class="fas fa-arrow-right"></i> Installed and configured Linux OS, including CUDA, for efficient deployment of AI models.</li>
+                            <li><i class="fas fa-arrow-right"></i> Collaborated with the team on software integration and project coordination.</li>
+                        </ul>
+                    </div>
+                    <div class="exp-skills">
+                        <h4 class="exp-skills-title">Skills & Technologies:</h4>
+                        <div class="exp-skills-list">
+                            <span class="exp-skill-badge">Python</span>
+                            <span class="exp-skill-badge">C++</span>
+                            <span class="exp-skill-badge">YOLOv8</span>
+                            <span class="exp-skill-badge">Jetson Nano</span>
+                            <span class="exp-skill-badge">CAN bus</span>
+                            <span class="exp-skill-badge">PCAN</span>
+                            <span class="exp-skill-badge">CUDA</span>
+                            <span class="exp-skill-badge">Linux</span>
+                            <span class="exp-skill-badge">Custom dataset creation</span>
+                            <span class="exp-skill-badge">AI model training</span>
+                            <span class="exp-skill-badge">Deployment</span>
+                            <span class="exp-skill-badge">Team collaboration</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3: QuetraTech Startup -->
+                <div class="experience-card-new">
+                    <div class="exp-header">
+                        <h3 class="exp-title">
+                            <span class="exp-company">QuetraTech Startup</span>
+                            <span class="exp-separator">|</span>
+                            <span class="exp-role">Embedded Systems Engineer Intern</span>
+                        </h3>
+                    </div>
+                    <div class="exp-meta">
+                        <div class="exp-meta-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tunis, Tunisia</span>
+                        </div>
+                        <div class="exp-meta-item">
+                            <i class="far fa-calendar-alt"></i>
+                            <span>February 2023 – June 2023</span>
+                        </div>
+                    </div>
+                    <div class="exp-description">
+                        <ul>
+                            <li><i class="fas fa-arrow-right"></i> Designed a road accident detection system using ESP32 (LilyGO) and SIM800L, including GPS tracking and SMS notifications in case of accidents.</li>
+                            <li><i class="fas fa-arrow-right"></i> Collaborated in a team using Agile methodology and Trello for task management and project coordination.</li>
+                            <li><i class="fas fa-arrow-right"></i> Built a Flutter app for drivers connected to a Firebase database.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Image Carousel for QuetraTech -->
+                    <div class="exp-carousel">
+                        <h4 class="exp-carousel-title">Hardware System:</h4>
+                        <div class="carousel-container">
+                            <div class="carousel-slides">
+                                <div class="carousel-slide active">
+                                    <img src="images/experience/slamtek1.jpg" alt="QuetraTech Hardware System" class="carousel-image">
+                                    <div class="carousel-caption">Hardware System</div>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="images/experience/slamtek2.jpg" alt="QuetraTech Hardware System" class="carousel-image">
+                                    <div class="carousel-caption">Hardware System</div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators">
+                                <span class="carousel-dot active" data-slide="0"></span>
+                                <span class="carousel-dot" data-slide="1"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="exp-skills">
+                        <h4 class="exp-skills-title">Skills & Technologies:</h4>
+                        <div class="exp-skills-list">
+                            <span class="exp-skill-badge">ESP32 (LilyGO)</span>
+                            <span class="exp-skill-badge">SIM800L</span>
+                            <span class="exp-skill-badge">GPS</span>
+                            <span class="exp-skill-badge">SMS integration</span>
+                            <span class="exp-skill-badge">Flutter</span>
+                            <span class="exp-skill-badge">Firebase</span>
+                            <span class="exp-skill-badge">IoT integration</span>
+                            <span class="exp-skill-badge">Agile</span>
+                            <span class="exp-skill-badge">Trello</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills resume-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+
+            <!-- Interactive Skill Categories -->
+            <div class="skills-interactive">
+
+                <!-- Programming -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="programming">
+                        <i class="fas fa-code category-icon"></i>
+                        <span>Programming</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="programming">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="fab fa-c" style="color: #A8B9CC;"></i>
+                                <span>C</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="devicon-cplusplus-plain" style="color: #00599C;"></i>
+                                <span>C++</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-java" style="color: #007396;"></i>
+                                <span>Java</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-python" style="color: #3776AB;"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-database" style="color: #00758F;"></i>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & Machine Learning -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="ai">
+                        <i class="fas fa-brain category-icon"></i>
+                        <span>AI & Machine Learning</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="ai">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="devicon-pandas-plain-wordmark" style="color: #150458;"></i>
+                                <span>Pandas</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="devicon-numpy-plain-wordmark" style="color: #4DABCF;"></i>
+                                <span>Numpy</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-project-diagram" style="color: #FF6F00;"></i>
+                                <span>CNN</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-language" style="color: #00D4FF;"></i>
+                                <span>NLP</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="devicon-tensorflow-original" style="color: #FF6F00;"></i>
+                                <span>TensorFlow</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-eye" style="color: #00D4FF;"></i>
+                                <span>YOLOv8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Communication Protocols -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="protocols">
+                        <i class="fas fa-network-wired category-icon"></i>
+                        <span>Communication Protocols</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="protocols">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="fas fa-exchange-alt" style="color: #00D4FF;"></i>
+                                <span>UART</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-link" style="color: #0099FF;"></i>
+                                <span>I2C</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-sync-alt" style="color: #00F0FF;"></i>
+                                <span>SPI</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-car" style="color: #3B82F6;"></i>
+                                <span>CAN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hardware & Development Boards -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="hardware">
+                        <i class="fas fa-microchip category-icon"></i>
+                        <span>Hardware & Development Boards</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="hardware">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="fas fa-microchip" style="color: #03234B;"></i>
+                                <span>STM32F407</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-wifi" style="color: #E7352C;"></i>
+                                <span>ESP8266</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-microchip" style="color: #03234B;"></i>
+                                <span>STM32H7B3I-DK</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-robot" style="color: #76B900;"></i>
+                                <span>NVIDIA Jetson Nano</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-raspberry-pi" style="color: #C51A4A;"></i>
+                                <span>Raspberry Pi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development & Build Tools -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="devtools">
+                        <i class="fas fa-tools category-icon"></i>
+                        <span>Development & Build Tools</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="devtools">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="devicon-vscode-plain" style="color: #007ACC;"></i>
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="devicon-qt-original" style="color: #41CD52;"></i>
+                                <span>Qt Creator</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-file-code" style="color: #00D4FF;"></i>
+                                <span>Makefile</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-docker" style="color: #2496ED;"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-cogs" style="color: #00D4FF;"></i>
+                                <span>FreeRTOS</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-chart-line" style="color: #0076A8;"></i>
+                                <span>MATLAB</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-cube" style="color: #03234B;"></i>
+                                <span>STM32CubeIDE</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fas fa-paint-brush" style="color: #00D4FF;"></i>
+                                <span>TouchGFX</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Management -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="projectmgmt">
+                        <i class="fas fa-tasks category-icon"></i>
+                        <span>Project Management</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="projectmgmt">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="fas fa-sync" style="color: #00D4FF;"></i>
+                                <span>Agile Scrum</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-trello" style="color: #0079BF;"></i>
+                                <span>Trello</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="os">
+                        <i class="fas fa-desktop category-icon"></i>
+                        <span>Operating Systems</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="os">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="fab fa-linux" style="color: #FCC624;"></i>
+                                <span>Linux</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-windows" style="color: #0078D6;"></i>
+                                <span>Windows</span>
+                            </div>
+                        </div>
+
+                        <!-- Linux Skills as Rounded Boxes -->
+                        <div class="linux-skills-container">
+                            <span class="linux-skill-tag">Bash</span>
+                            <span class="linux-skill-tag">Process Management</span>
+                            <span class="linux-skill-tag">Zsh</span>
+                            <span class="linux-skill-tag">PowerShell</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Version Control Systems -->
+                <div class="skill-category">
+                    <button class="category-header" data-category="vcs">
+                        <i class="fas fa-code-branch category-icon"></i>
+                        <span>Version Control Systems</span>
+                        <i class="fas fa-chevron-down arrow-icon"></i>
+                    </button>
+                    <div class="category-content" id="vcs">
+                        <div class="skill-logos">
+                            <div class="skill-logo-item">
+                                <i class="fab fa-git-alt" style="color: #F05032;"></i>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-logo-item">
+                                <i class="fab fa-github" style="color: #FFFFFF;"></i>
+                                <span>GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects resume-section">
+        <div class="container">
+            <h2 class="section-title">PROJECTS</h2>
+            <div class="experience-grid">
+
+                <!-- Project 1: FOTA Update for STM32 -->
+                <div class="experience-card-new project-with-image">
+                    <div class="project-content-wrapper">
+                        <div class="project-text-content">
+                            <div class="project-title-row">
+                                <h3 class="project-main-title">FOTA Update for STM32</h3>
+                                <span class="project-date-inline">Jan 2025</span>
+                            </div>
+                            <ul class="project-description-list">
+                                <li><i class="fas fa-arrow-right"></i> Developed a Firmware Over-The-Air (FOTA) update system for the STM32F407-Discovery, using a custom bootloader and an ESP8266 for wireless communication.</li>
+                            </ul>
+                            <div class="project-skills-section">
+                                <span class="skill-badge-mini">Embedded C</span>
+                                <span class="skill-badge-mini">MQTT</span>
+                                <span class="skill-badge-mini">WiFi</span>
+                                <span class="skill-badge-mini">UART</span>
+                                <span class="skill-badge-mini">Firebase</span>
+                                <span class="skill-badge-mini">Node-RED</span>
+                                <span class="skill-badge-mini">STM32</span>
+                            </div>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="images/fota.jpg" alt="FOTA Project" class="project-certificate" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div class="certificate-placeholder" style="display: none;">
+                                <i class="fas fa-microchip"></i>
+                                <span>Project Image</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Vehicle Detection and Segmentation System -->
+                <div class="experience-card-new">
+                    <div class="project-title-row">
+                        <h3 class="project-main-title">Vehicle Detection and Segmentation System</h3>
+                        <span class="project-date-inline">Nov 2024</span>
+                    </div>
+                    <ul class="project-description-list">
+                        <li><i class="fas fa-arrow-right"></i> Preprocessed and augmented images using grayscale and YCbCr color spaces to improve clarity.</li>
+                        <li><i class="fas fa-arrow-right"></i> Applied segmentation techniques like thresholding, Canny edge detection, and K-means clustering.</li>
+                        <li><i class="fas fa-arrow-right"></i> Designed and trained a CNN model using TensorFlow.</li>
+                    </ul>
+                    <div class="project-skills-section">
+                        <span class="skill-badge-mini">OpenCV</span>
+                        <span class="skill-badge-mini">TensorFlow</span>
+                        <span class="skill-badge-mini">NumPy</span>
+                        <span class="skill-badge-mini">Pandas</span>
+                        <span class="skill-badge-mini">Python</span>
+                        <span class="skill-badge-mini">Google Colab</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: LED Control System with STM32 and Qt Interface -->
+                <div class="experience-card-new">
+                    <div class="project-title-row">
+                        <h3 class="project-main-title">LED Control System with STM32 and Qt Interface</h3>
+                        <span class="project-date-inline">Sep 2024</span>
+                    </div>
+                    <ul class="project-description-list">
+                        <li><i class="fas fa-arrow-right"></i> Developed a Qt-based GUI in C++ to control LEDs on the STM32F407 board, enabling real-time UART communication for interactive feedback.</li>
+                    </ul>
+                    <div class="project-skills-section">
+                        <span class="skill-badge-mini">C++</span>
+                        <span class="skill-badge-mini">Qt</span>
+                        <span class="skill-badge-mini">UART</span>
+                        <span class="skill-badge-mini">STM32</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations Section -->
+    <section id="organizations" class="experience resume-section">
+        <div class="container">
+            <h2 class="section-title">Organizations</h2>
+            <div class="experience-grid">
+
+                <!-- Organization 1: Robotics Engineering Club -->
+                <div class="experience-card-new">
+                    <div class="org-logos">
+                        <img src="images/robotics-club-logo.png" alt="Robotics Club" class="org-logo" onerror="this.style.display='none';">
+                    </div>
+                    <div class="exp-header">
+                        <h3 class="exp-title">Sponsorship and Treasury Manager</h3>
+                        <div class="exp-meta">
+                            <span class="exp-location">
+                                <i class="fas fa-building"></i>
+                                Robotics Engineering Club
+                            </span>
+                            <span class="exp-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                Sep 2024 – Present
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="exp-description">
+                        <li><i class="fas fa-arrow-right"></i> Built a line-following robot and participated in several national robotics competitions.</li>
+                    </ul>
+                </div>
+
+                <!-- Organization 2: IEEE Student Chapters -->
+                <div class="experience-card-new">
+                    <div class="org-logos">
+                        <img src="images/ieee-logo.png" alt="IEEE" class="org-logo" onerror="this.style.display='none';">
+                        <img src="images/ras-logo.png" alt="RAS" class="org-logo" onerror="this.style.display='none';">
+                        <img src="images/wie-logo.png" alt="WIE" class="org-logo" onerror="this.style.display='none';">
+                    </div>
+                    <div class="exp-header">
+                        <h3 class="exp-title">IEEE Volunteer</h3>
+                        <div class="exp-meta">
+                            <span class="exp-location">
+                                <i class="fas fa-building"></i>
+                                IEEE Student Chapters (RAS & WIE)
+                            </span>
+                            <span class="exp-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                2021 – 2023
+                            </span>
+                        </div>
+                    </div>
+                    <ul class="exp-description">
+                        <li><i class="fas fa-arrow-right"></i> Member of the IEEE Robotics and Automation Society (RAS) and Women in Engineering (WIE) Chapter.</li>
+                        <li><i class="fas fa-arrow-right"></i> Developed leadership, teamwork, and organizational skills.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm always open to discussing new projects, creative ideas, or opportunities.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>chebbi.wiemm@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+216 50 193 511</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Tunis, Tunisia</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/wiem-chebbi1/" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/wiemm12" target="_blank" rel="noopener noreferrer" class="social-link"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wiem. All rights reserved.</p>
+            <p>Built with passion and dedication</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
