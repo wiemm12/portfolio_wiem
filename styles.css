@@ -2560,3 +2560,21 @@ body {
     }
 }
 
+
+/* 2026 portfolio refresh: hero actions */
+.portfolio-cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.75rem;
+}
+.portfolio-cta .btn { min-width: 170px; text-align: center; }
+@media (max-width: 640px) {
+    .portfolio-cta { flex-direction: column; align-items: center; }
+    .portfolio-cta .btn { width: min(100%, 260px); }
+    .home .line-3, .home .line-4 { font-size: clamp(1.1rem, 5vw, 1.7rem); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .portfolio-cta *, .portfolio-cta *::before, .portfolio-cta *::after { transition: none !important; }
+}
